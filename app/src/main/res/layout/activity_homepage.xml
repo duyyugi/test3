@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".HomePageActivity">
+
+        <TextView
+            android:id="@+id/tv_tenungdung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="50dp"
+            android:textSize="40dp"
+            android:textColor="@color/black"
+            android:text="AR-VIET"
+            />
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_logo"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tenungdung"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="30dp"
+            />
+
+        <Button style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:id="@+id/btn_hocngay"
+            android:textColor="@color/white"
+            app:strokeColor="@color/white"
+            app:strokeWidth="2dp"
+            app:cornerRadius="5dp"
+            android:text="HỌC NGAY"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_width="320dp"
+            android:layout_height="80dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo"
+            android:backgroundTint="#4F83CC"
+            android:layout_marginTop="100dp"
+            />
+        <Button style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:id="@+id/btn_taikhoan"
+            android:textColor="@color/white"
+            app:strokeColor="@color/white"
+            app:strokeWidth="2dp"
+            app:cornerRadius="5dp"
+            android:text="TÀI KHOẢN"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_width="320dp"
+            android:layout_height="80dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_hocngay"
+            android:backgroundTint="#4F83CC"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:id="@+id/btn_trogiup"
+            android:textColor="@color/white"
+            app:strokeColor="@color/white"
+            app:strokeWidth="2dp"
+            app:cornerRadius="5dp"
+            android:text="TRỢ GIÚP"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_width="320dp"
+            android:layout_height="80dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_taikhoan"
+            android:backgroundTint="#4F83CC"
+            android:layout_marginTop="10dp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
